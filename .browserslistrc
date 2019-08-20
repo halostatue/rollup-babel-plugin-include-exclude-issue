@@ -1,0 +1,9 @@
+# Supported browsers
+
+[production]
+Last 2 versions
+Safari >= 9
+IE >= 10
+
+[development]
+Last 2 versions

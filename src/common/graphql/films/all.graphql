@@ -1,0 +1,35 @@
+query AllFilms(
+  $after: String,
+  $first: Int,
+  $before: String,
+  $last: Int
+) {
+  allFilms(
+    after: $after,
+    first: $first,
+    before: $before,
+    last: $last
+  ) {
+    pageInfo {
+      hasNextPage
+      startCursor
+      hasPreviousPage
+      endCursor
+    }
+
+    totalCount
+
+    edges {
+      cursor
+      node {
+        id
+        title
+        episodeID
+        openingCrawl
+        director
+        producers
+        releaseDate
+      }
+    }
+  }
+}

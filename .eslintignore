@@ -1,0 +1,6 @@
+# Vendored files
+brunch-config.js
+js/common/vue-uniq-ids/**/*.js
+js/common/socket.js
+js/common/graphql/**/*.graphql
+js/common/apollo/fragmentTypes.js
